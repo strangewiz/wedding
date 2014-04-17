@@ -10,6 +10,8 @@
 
 @interface DCStuffViewController () {
   NSArray* data_;
+  UIBarButtonItem* rightButton_;
+  UISegmentedControl* segment_;
 }
 
 @end
@@ -25,11 +27,21 @@
                                           options:kNilOptions
                                             error:&error];
 
-  UISegmentedControl* filter = [[UISegmentedControl alloc]
-      initWithItems:@[ @"Eats", @"Places" ]];
-  filter.selectedSegmentIndex = 0;
-  [filter sizeToFit];
-  self.navigationItem.titleView = filter;
+  segment_ = [[UISegmentedControl alloc] initWithItems:@[ @"Eats", @"To Do" ]];
+  segment_.selectedSegmentIndex = 0;
+  [segment_ addTarget:self
+                action:@selector(segmentChanged:)
+      forControlEvents:UIControlEventValueChanged];
+  [segment_ sizeToFit];
+  self.navigationItem.titleView = segment_;
+
+  rightButton_ = [UIButton buttonWithType:UIButtonTypeSystem];
+  rightButton_ =
+      [[UIBarButtonItem alloc] initWithTitle:@"Map"
+                                       style:UIBarButtonItemStyleBordered
+                                      target:self
+                                      action:@selector(toggleTableMap)];
+  self.navigationItem.rightBarButtonItem = rightButton_;
 }
 
 - (void)viewDidLoad {
@@ -37,9 +49,14 @@
   // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+
+
+- (void)segmentChanged:(id)sender {
+  // Update table view controller for segment_.selectedSegmentIndex.
+}
+
+- (void)toggleTableMap {
+
 }
 
 /*

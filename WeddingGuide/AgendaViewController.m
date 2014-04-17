@@ -10,6 +10,7 @@
 
 @interface AgendaViewController () {
   NSArray* data_;
+  UIBarButtonItem* rightButton_;
   UISegmentedControl* segment_;
 }
 @end
@@ -33,6 +34,13 @@
       forControlEvents:UIControlEventValueChanged];
   [segment_ sizeToFit];
   self.navigationItem.titleView = segment_;
+
+  rightButton_ = [UIButton buttonWithType:UIButtonTypeSystem];
+  rightButton_ =
+      [[UIBarButtonItem alloc] initWithTitle:@"Map"
+                                       style:UIBarButtonItemStyleBordered
+                                      target:self
+                                      action:@selector(toggleTableMap)];
 }
 
 - (void)viewDidLoad {
@@ -45,8 +53,17 @@
   // Dispose of any resources that can be recreated.
 }
 
-- (void)action:(id)sender {
+- (void)segmentChanged:(id)sender {
   // Update table view controller for segment_.selectedSegmentIndex.
+  if (segment_.selectedSegmentIndex == 1) {
+    self.navigationItem.rightBarButtonItem = rightButton_;
+  } else {
+    self.navigationItem.rightBarButtonItem = nil;
+  }
+}
+
+- (void)toggleTableMap {
+
 }
 
 #pragma mark - Navigation
