@@ -118,7 +118,7 @@
         <scene sceneID="lXu-NR-44z">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HT1-t3-XPb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timeline" id="vjj-OG-QvN"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="clock.png" id="vjj-OG-QvN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="crQ-Ce-j9d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -137,7 +137,7 @@
         <scene sceneID="s2o-Qs-wck">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K1Z-2h-4a8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="DC Deets" id="dyP-ki-hx2"/>
+                    <tabBarItem key="tabBarItem" title="DC Deets" image="library.png" id="dyP-ki-hx2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Z8-Gc-g5f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -186,7 +186,7 @@ Photos</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About Us" id="8EI-6n-rQ1"/>
+                    <tabBarItem key="tabBarItem" title="About Us" image="about.png" id="8EI-6n-rQ1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5i-3Z-ihz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,6 +194,9 @@ Photos</string>
         </scene>
     </scenes>
     <resources>
+        <image name="about.png" width="26" height="26"/>
+        <image name="clock.png" width="25" height="25"/>
+        <image name="library.png" width="32" height="32"/>
         <image name="wedding.jpg" width="1280" height="743"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

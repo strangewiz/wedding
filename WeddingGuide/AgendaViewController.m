@@ -25,7 +25,7 @@
                                             error:&error];
 
   UISegmentedControl* filter = [[UISegmentedControl alloc]
-      initWithItems:@[ @"Timeline", @"Important Places" ]];
+      initWithItems:@[ @"Timeline", @"Places" ]];
   filter.selectedSegmentIndex = 0;
   [filter sizeToFit];
   self.navigationItem.titleView = filter;

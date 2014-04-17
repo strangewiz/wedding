@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9344F43218FF82E50060157C /* agenda.json in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43118FF82E50060157C /* agenda.json */; };
 		9344F43418FF8BAB0060157C /* dcstuff.json in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43318FF8BAB0060157C /* dcstuff.json */; };
+		9344F43618FF90B80060157C /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43518FF90B80060157C /* clock.png */; };
+		9344F43818FF91FC0060157C /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43718FF91FC0060157C /* about.png */; };
+		9344F43B18FF92440060157C /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43918FF92440060157C /* about@2x.png */; };
+		9344F43C18FF92440060157C /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43A18FF92440060157C /* clock@2x.png */; };
+		9344F43F18FF92DE0060157C /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43D18FF92DE0060157C /* library.png */; };
+		9344F44018FF92DE0060157C /* library@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43E18FF92DE0060157C /* library@2x.png */; };
 		935DCE0A18FF76E5006E60EC /* wedding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 935DCE0918FF76E5006E60EC /* wedding.jpg */; };
 		935DCE0D18FF7E5D006E60EC /* AgendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935DCE0C18FF7E5D006E60EC /* AgendaViewController.m */; };
 		935DCE1318FF7F18006E60EC /* DCStuffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935DCE1218FF7F18006E60EC /* DCStuffViewController.m */; };
@@ -41,6 +47,12 @@
 /* Begin PBXFileReference section */
 		9344F43118FF82E50060157C /* agenda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = agenda.json; sourceTree = "<group>"; };
 		9344F43318FF8BAB0060157C /* dcstuff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dcstuff.json; sourceTree = "<group>"; };
+		9344F43518FF90B80060157C /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		9344F43718FF91FC0060157C /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		9344F43918FF92440060157C /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
+		9344F43A18FF92440060157C /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		9344F43D18FF92DE0060157C /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
+		9344F43E18FF92DE0060157C /* library@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "library@2x.png"; sourceTree = "<group>"; };
 		935DCE0918FF76E5006E60EC /* wedding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wedding.jpg; sourceTree = "<group>"; };
 		935DCE0B18FF7E5D006E60EC /* AgendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaViewController.h; sourceTree = "<group>"; };
 		935DCE0C18FF7E5D006E60EC /* AgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaViewController.m; sourceTree = "<group>"; };
@@ -94,6 +106,12 @@
 		935DCE0818FF76E5006E60EC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9344F43718FF91FC0060157C /* about.png */,
+				9344F43918FF92440060157C /* about@2x.png */,
+				9344F43518FF90B80060157C /* clock.png */,
+				9344F43A18FF92440060157C /* clock@2x.png */,
+				9344F43D18FF92DE0060157C /* library.png */,
+				9344F43E18FF92DE0060157C /* library@2x.png */,
 				935DCE0918FF76E5006E60EC /* wedding.jpg */,
 			);
 			path = images;
@@ -257,10 +275,16 @@
 			files = (
 				93BCAF9818FF74D500C811D9 /* Images.xcassets in Resources */,
 				93BCAF9018FF74D500C811D9 /* Main_iPhone.storyboard in Resources */,
+				9344F43F18FF92DE0060157C /* library.png in Resources */,
 				935DCE0A18FF76E5006E60EC /* wedding.jpg in Resources */,
 				9344F43418FF8BAB0060157C /* dcstuff.json in Resources */,
 				93BCAF8718FF74D500C811D9 /* InfoPlist.strings in Resources */,
+				9344F43C18FF92440060157C /* clock@2x.png in Resources */,
+				9344F43618FF90B80060157C /* clock.png in Resources */,
+				9344F44018FF92DE0060157C /* library@2x.png in Resources */,
+				9344F43B18FF92440060157C /* about@2x.png in Resources */,
 				9344F43218FF82E50060157C /* agenda.json in Resources */,
+				9344F43818FF91FC0060157C /* about.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
