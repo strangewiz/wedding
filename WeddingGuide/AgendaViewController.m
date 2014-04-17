@@ -12,6 +12,7 @@
   NSArray* data_;
   UIBarButtonItem* rightButton_;
   UISegmentedControl* segment_;
+  IBOutlet UITableView* table_;
 }
 @end
 
@@ -60,6 +61,7 @@
   } else {
     self.navigationItem.rightBarButtonItem = nil;
   }
+  [table_ reloadData];
 }
 
 - (void)toggleTableMap {
@@ -88,12 +90,13 @@
 
 - (UITableViewCell*)tableView:(UITableView*)tableView
         cellForRowAtIndexPath:(NSIndexPath*)indexPath {
-  static NSString* cellIdentifier = @"cell";
-
-  [tableView registerClass:[UITableViewCell class]
-      forCellReuseIdentifier:cellIdentifier];
+  static NSString* mapIdentifier = @"mapcell";
+  static NSString* agendaIdentifier = @"cell";
+    [tableView registerClass:[UITableViewCell class]
+      forCellReuseIdentifier:agendaIdentifier];
+  NSString* cellId = segment_.selectedSegmentIndex == 0 ? agendaIdentifier : mapIdentifier;
   UITableViewCell* cell =
-      [tableView dequeueReusableCellWithIdentifier:cellIdentifier
+      [tableView dequeueReusableCellWithIdentifier:cellId
                                       forIndexPath:indexPath];
   cell.textLabel.text = data_[indexPath.row][@"name"];
   return cell;

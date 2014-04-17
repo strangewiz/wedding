@@ -54,6 +54,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mapcell" id="OZF-nm-L6C">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OZF-nm-L6C" id="cJY-O6-vnA">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="erc-T1-8M5" kind="push" id="oVb-Ri-kU7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="wsM-Pn-Tft" id="yi8-rE-ama"/>
                                     <outlet property="delegate" destination="wsM-Pn-Tft" id="AzV-Fa-dyM"/>
@@ -63,6 +76,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fJq-vK-PAp"/>
+                    <connections>
+                        <outlet property="table_" destination="9g7-Is-iQz" id="VX9-rH-DHk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egt-5h-AwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,6 +116,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mapcell" id="akL-an-f2d">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="akL-an-f2d" id="5xW-P4-V9J">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="erc-T1-8M5" kind="push" id="8sK-Qo-GLt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="dBy-Fn-xe2" id="FZN-sG-i1X"/>
                                     <outlet property="delegate" destination="dBy-Fn-xe2" id="Xbg-fN-uwE"/>
@@ -113,6 +142,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gV3-Ne-sLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="395" y="241"/>
+        </scene>
+        <!--Map View Controller - MapView-->
+        <scene sceneID="dtj-gG-wnL">
+            <objects>
+                <viewController title="MapView" id="erc-T1-8M5" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eGL-Kx-4Xe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KDg-pl-ZzB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmd-GV-skS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="-59"/>
         </scene>
         <!--Navigation Controller - Timeline-->
         <scene sceneID="lXu-NR-44z">
@@ -204,4 +248,7 @@ Photos</string>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="oVb-Ri-kU7"/>
+    </inferredMetricsTieBreakers>
 </document>

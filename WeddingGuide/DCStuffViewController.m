@@ -85,10 +85,7 @@ preparation before navigation
 
 - (UITableViewCell*)tableView:(UITableView*)tableView
         cellForRowAtIndexPath:(NSIndexPath*)indexPath {
-  static NSString* cellIdentifier = @"cell";
-
-  [tableView registerClass:[UITableViewCell class]
-    forCellReuseIdentifier:cellIdentifier];
+  static NSString* cellIdentifier = @"mapcell";
   UITableViewCell* cell =
   [tableView dequeueReusableCellWithIdentifier:cellIdentifier
                                   forIndexPath:indexPath];
