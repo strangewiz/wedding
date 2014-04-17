@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DCStuffViewController.h
 //  WeddingGuide
 //
 //  Created by Justin Cohen on 4/16/14.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
-  IBOutlet UIImageView* logo_;
-}
+@interface DCStuffViewController
+    : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end

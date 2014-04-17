@@ -14,16 +14,14 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  [self performSelector:@selector(showTabs) withObject:nil afterDelay:2];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)showTabs {
+  [self performSegueWithIdentifier:@"ToTabBar" sender:self];
+
 }
 
 @end
