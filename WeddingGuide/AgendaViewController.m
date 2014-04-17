@@ -10,6 +10,7 @@
 
 @interface AgendaViewController () {
   NSArray* data_;
+  UISegmentedControl* segment_;
 }
 @end
 
@@ -24,11 +25,14 @@
                                           options:kNilOptions
                                             error:&error];
 
-  UISegmentedControl* filter = [[UISegmentedControl alloc]
-      initWithItems:@[ @"Timeline", @"Places" ]];
-  filter.selectedSegmentIndex = 0;
-  [filter sizeToFit];
-  self.navigationItem.titleView = filter;
+  segment_ =
+      [[UISegmentedControl alloc] initWithItems:@[ @"Timeline", @"Places" ]];
+  segment_.selectedSegmentIndex = 0;
+  [segment_ addTarget:self
+                action:@selector(segmentChanged:)
+      forControlEvents:UIControlEventValueChanged];
+  [segment_ sizeToFit];
+  self.navigationItem.titleView = segment_;
 }
 
 - (void)viewDidLoad {
@@ -39,6 +43,10 @@
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+- (void)action:(id)sender {
+  // Update table view controller for segment_.selectedSegmentIndex.
 }
 
 #pragma mark - Navigation
