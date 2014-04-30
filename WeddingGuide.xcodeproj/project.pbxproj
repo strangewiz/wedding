@@ -15,6 +15,8 @@
 		9344F43C18FF92440060157C /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43A18FF92440060157C /* clock@2x.png */; };
 		9344F43F18FF92DE0060157C /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43D18FF92DE0060157C /* library.png */; };
 		9344F44018FF92DE0060157C /* library@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344F43E18FF92DE0060157C /* library@2x.png */; };
+		93516F73190D57C2008D3625 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93516F72190D57C2008D3625 /* Settings.bundle */; };
+		93516F75190D63BA008D3625 /* agenda_places.json in Resources */ = {isa = PBXBuildFile; fileRef = 93516F74190D63BA008D3625 /* agenda_places.json */; };
 		935DCE0A18FF76E5006E60EC /* wedding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 935DCE0918FF76E5006E60EC /* wedding.jpg */; };
 		935DCE0D18FF7E5D006E60EC /* AgendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935DCE0C18FF7E5D006E60EC /* AgendaViewController.m */; };
 		935DCE1318FF7F18006E60EC /* DCStuffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935DCE1218FF7F18006E60EC /* DCStuffViewController.m */; };
@@ -32,6 +34,8 @@
 		93BCAFA118FF74D500C811D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BCAF8018FF74D500C811D9 /* UIKit.framework */; };
 		93BCAFA918FF74D500C811D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93BCAFA718FF74D500C811D9 /* InfoPlist.strings */; };
 		93BCAFAB18FF74D500C811D9 /* WeddingGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCAFAA18FF74D500C811D9 /* WeddingGuideTests.m */; };
+		93D9B6A01910806A00F3E9CE /* AboutUsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D9B69F1910806A00F3E9CE /* AboutUsWebViewController.m */; };
+		93D9B6A21910810200F3E9CE /* aboutus.html in Resources */ = {isa = PBXBuildFile; fileRef = 93D9B6A11910810200F3E9CE /* aboutus.html */; };
 		93E09C581900176D00D56266 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E09C571900176D00D56266 /* GoogleMaps.framework */; };
 		93E09C5A190017A900D56266 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93E09C59190017A900D56266 /* GoogleMaps.bundle */; };
 		93E09C5C190017D300D56266 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E09C5B190017D300D56266 /* AVFoundation.framework */; };
@@ -68,6 +72,8 @@
 		9344F43A18FF92440060157C /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 		9344F43D18FF92DE0060157C /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
 		9344F43E18FF92DE0060157C /* library@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "library@2x.png"; sourceTree = "<group>"; };
+		93516F72190D57C2008D3625 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
+		93516F74190D63BA008D3625 /* agenda_places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = agenda_places.json; sourceTree = "<group>"; };
 		935DCE0918FF76E5006E60EC /* wedding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wedding.jpg; sourceTree = "<group>"; };
 		935DCE0B18FF7E5D006E60EC /* AgendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaViewController.h; sourceTree = "<group>"; };
 		935DCE0C18FF7E5D006E60EC /* AgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaViewController.m; sourceTree = "<group>"; };
@@ -92,6 +98,9 @@
 		93BCAFA618FF74D500C811D9 /* WeddingGuideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeddingGuideTests-Info.plist"; sourceTree = "<group>"; };
 		93BCAFA818FF74D500C811D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93BCAFAA18FF74D500C811D9 /* WeddingGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeddingGuideTests.m; sourceTree = "<group>"; };
+		93D9B69E1910806A00F3E9CE /* AboutUsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsWebViewController.h; sourceTree = "<group>"; };
+		93D9B69F1910806A00F3E9CE /* AboutUsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsWebViewController.m; sourceTree = "<group>"; };
+		93D9B6A11910810200F3E9CE /* aboutus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = aboutus.html; sourceTree = "<group>"; };
 		93E09C571900176D00D56266 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		93E09C59190017A900D56266 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		93E09C5B190017D300D56266 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -208,9 +217,13 @@
 		93BCAF8218FF74D500C811D9 /* WeddingGuide */ = {
 			isa = PBXGroup;
 			children = (
+				93D9B69E1910806A00F3E9CE /* AboutUsWebViewController.h */,
+				93D9B69F1910806A00F3E9CE /* AboutUsWebViewController.m */,
+				93D9B6A11910810200F3E9CE /* aboutus.html */,
 				935DCE0B18FF7E5D006E60EC /* AgendaViewController.h */,
 				935DCE0C18FF7E5D006E60EC /* AgendaViewController.m */,
 				9344F43118FF82E50060157C /* agenda.json */,
+				93516F74190D63BA008D3625 /* agenda_places.json */,
 				93BCAF8B18FF74D500C811D9 /* AppDelegate.h */,
 				93BCAF8C18FF74D500C811D9 /* AppDelegate.m */,
 				935DCE1118FF7F18006E60EC /* DCStuffViewController.h */,
@@ -233,6 +246,7 @@
 			children = (
 				93BCAF8418FF74D500C811D9 /* WeddingGuide-Info.plist */,
 				93BCAF8518FF74D500C811D9 /* InfoPlist.strings */,
+				93516F72190D57C2008D3625 /* Settings.bundle */,
 				93BCAF8818FF74D500C811D9 /* main.m */,
 				93BCAF8A18FF74D500C811D9 /* WeddingGuide-Prefix.pch */,
 			);
@@ -335,11 +349,14 @@
 			files = (
 				93BCAF9818FF74D500C811D9 /* Images.xcassets in Resources */,
 				93BCAF9018FF74D500C811D9 /* Main_iPhone.storyboard in Resources */,
+				93D9B6A21910810200F3E9CE /* aboutus.html in Resources */,
 				9344F43F18FF92DE0060157C /* library.png in Resources */,
 				935DCE0A18FF76E5006E60EC /* wedding.jpg in Resources */,
 				9344F43418FF8BAB0060157C /* dcstuff.json in Resources */,
 				93BCAF8718FF74D500C811D9 /* InfoPlist.strings in Resources */,
+				93516F73190D57C2008D3625 /* Settings.bundle in Resources */,
 				93E09C5A190017A900D56266 /* GoogleMaps.bundle in Resources */,
+				93516F75190D63BA008D3625 /* agenda_places.json in Resources */,
 				9344F43C18FF92440060157C /* clock@2x.png in Resources */,
 				9344F43618FF90B80060157C /* clock.png in Resources */,
 				9344F44018FF92DE0060157C /* library@2x.png in Resources */,
@@ -364,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D9B6A01910806A00F3E9CE /* AboutUsWebViewController.m in Sources */,
 				935DCE0D18FF7E5D006E60EC /* AgendaViewController.m in Sources */,
 				93BCAF9618FF74D500C811D9 /* ViewController.m in Sources */,
 				93BCAF8D18FF74D500C811D9 /* AppDelegate.m in Sources */,

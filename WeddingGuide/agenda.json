@@ -1,6 +1,47 @@
 [
- {"name" : "wedding",
-  "time" : "4:30PM"},
- {"name" : "receptions"},
- {"name" : "cake cut"}
+  {
+    "title": "9:30AM Women do hair",
+    "bridal_party": 1,
+    "details": "details on where to go",
+    
+  },
+  {
+    "title": "1:00PM Photos on the mall",
+    "bridal_party": 1,
+    "details": "details on where to go, and who needs to be there.",
+    
+  },
+  {
+    "title": "3:30PM Ceremony Time!",
+    "details": "prelude, processional, etc, put text here",
+    
+  },
+  {
+    "title": "4:00PM Ceremony Ends!",
+    
+  },
+  {
+    "title": "4:00PM Cocktail Hour",
+    "details": "grab some drinks and enjoy the view.",
+    
+  },
+  {
+    "title": "5:00PM Time for dinner",
+    "details": "maybe list the menu for those who forget.",
+    
+  },
+  {
+    "title": "6:00PM Dancing",
+    "details": "something funny about throwing me in a chair.",
+    
+  },
+  {
+    "title": "7:00PM Cake cutting",
+    
+  },
+  {
+    "title": "10:30PM Last song",
+
+  },
+  
 ]

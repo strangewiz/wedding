@@ -9,10 +9,13 @@
 #import "AgendaViewController.h"
 
 @interface AgendaViewController () {
-  NSArray* data_;
+  NSArray* agendaData_;
+  NSArray* placesData_;
   UIBarButtonItem* rightButton_;
   UISegmentedControl* segment_;
   IBOutlet UITableView* table_;
+  IBOutlet NSString* agendaDetail_;
+  BOOL showBridalParty_;
 }
 @end
 
@@ -23,9 +26,17 @@
       [[NSBundle mainBundle] pathForResource:@"agenda" ofType:@"json"];
   NSData* data = [NSData dataWithContentsOfFile:filePath];
   __autoreleasing NSError* error = nil;
-  data_ = [NSJSONSerialization JSONObjectWithData:data
-                                          options:kNilOptions
-                                            error:&error];
+  agendaData_ = [NSJSONSerialization JSONObjectWithData:data
+                                                options:kNilOptions
+                                                  error:&error];
+
+  filePath =
+      [[NSBundle mainBundle] pathForResource:@"agenda_places" ofType:@"json"];
+  data = [NSData dataWithContentsOfFile:filePath];
+  error = nil;
+  placesData_ = [NSJSONSerialization JSONObjectWithData:data
+                                                options:kNilOptions
+                                                  error:&error];
 
   segment_ =
       [[UISegmentedControl alloc] initWithItems:@[ @"Timeline", @"Places" ]];
@@ -42,6 +53,8 @@
                                        style:UIBarButtonItemStyleBordered
                                       target:self
                                       action:@selector(toggleTableMap)];
+  NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+  showBridalParty_ = [defaults boolForKey:@"bridal_party"];
 }
 
 - (void)viewDidLoad {
@@ -61,11 +74,12 @@
   } else {
     self.navigationItem.rightBarButtonItem = nil;
   }
+  NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+  showBridalParty_ = [defaults boolForKey:@"bridal_party"];
   [table_ reloadData];
 }
 
 - (void)toggleTableMap {
-
 }
 
 #pragma mark - Navigation
@@ -83,23 +97,70 @@
   return 1;
 }
 
+- (NSInteger)itemCount {
+  NSUInteger count = 0;
+  NSArray* data =
+      segment_.selectedSegmentIndex == 0 ? agendaData_ : placesData_;
+
+  for (NSDictionary* dict in data) {
+    if (!showBridalParty_ && dict[@"bridal_party"] != nil)
+      continue;
+    count++;
+  }
+  return count;
+}
+
 - (NSInteger)tableView:(UITableView*)tableView
     numberOfRowsInSection:(NSInteger)section {
-  return 2;
+  return [self itemCount];
+}
+
+- (NSDictionary*)itemForRow:(NSInteger)row {
+  NSUInteger actualRow = 0;
+  NSArray* data =
+      segment_.selectedSegmentIndex == 0 ? agendaData_ : placesData_;
+  for (NSDictionary* dict in data) {
+    if (!showBridalParty_ && dict[@"bridal_party"] != nil)
+      continue;
+    if (actualRow == row)
+      return dict;
+    actualRow++;
+  }
+  return nil;
+}
+
+- (UITableViewCell*)tableView:(UITableView*)tableView
+    agendaCellForRowAtIndexPath:(NSIndexPath*)indexPath {
+//  [tableView registerClass:[UITableViewCell class]
+//      forCellReuseIdentifier:@"agendacell"];
+  UITableViewCell* cell =
+      [tableView dequeueReusableCellWithIdentifier:@"agendacell"
+                                      forIndexPath:indexPath];
+  NSDictionary* agenda = [self itemForRow:indexPath.row];
+  cell.textLabel.text = agenda[@"title"];
+  if (agenda[@"details"] != nil) {
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+  }
+  return cell;
+}
+
+- (UITableViewCell*)tableView:(UITableView*)tableView
+     mapCellForRowAtIndexPath:(NSIndexPath*)indexPath {
+  UITableViewCell* cell =
+      [tableView dequeueReusableCellWithIdentifier:@"mapcell"
+                                      forIndexPath:indexPath];
+  NSDictionary* places = [self itemForRow:indexPath.row];
+  cell.textLabel.text = places[@"title"];
+  return cell;
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView
         cellForRowAtIndexPath:(NSIndexPath*)indexPath {
-  static NSString* mapIdentifier = @"mapcell";
-  static NSString* agendaIdentifier = @"cell";
-    [tableView registerClass:[UITableViewCell class]
-      forCellReuseIdentifier:agendaIdentifier];
-  NSString* cellId = segment_.selectedSegmentIndex == 0 ? agendaIdentifier : mapIdentifier;
-  UITableViewCell* cell =
-      [tableView dequeueReusableCellWithIdentifier:cellId
-                                      forIndexPath:indexPath];
-  cell.textLabel.text = data_[indexPath.row][@"name"];
-  return cell;
+  if (segment_.selectedSegmentIndex == 0) {
+    return [self tableView:tableView agendaCellForRowAtIndexPath:indexPath];
+  } else {
+    return [self tableView:tableView mapCellForRowAtIndexPath:indexPath];
+  }
 }
 
 @end
