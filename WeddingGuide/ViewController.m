@@ -19,6 +19,10 @@
   [self performSelector:@selector(showTabs) withObject:nil afterDelay:2];
 }
 
+- (BOOL)prefersStatusBarHidden {
+  return YES;
+}
+
 - (void)showTabs {
   [self performSegueWithIdentifier:@"ToTabBar" sender:self];
 
