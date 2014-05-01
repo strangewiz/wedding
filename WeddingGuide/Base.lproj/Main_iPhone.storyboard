@@ -149,6 +149,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rac-SB-Wt3"/>
+                    <connections>
+                        <outlet property="table_" destination="tve-1E-4Ua" id="sXc-8L-uEA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gV3-Ne-sLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -272,6 +275,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="oVb-Ri-kU7"/>
+        <segue reference="8sK-Qo-GLt"/>
     </inferredMetricsTieBreakers>
 </document>

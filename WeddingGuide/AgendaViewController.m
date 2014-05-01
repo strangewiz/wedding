@@ -70,11 +70,6 @@
   // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
-}
-
 - (void)segmentChanged:(id)sender {
   // Update table view controller for segment_.selectedSegmentIndex.
   if (segment_.selectedSegmentIndex == 1) {
