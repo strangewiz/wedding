@@ -10,4 +10,10 @@
 
 @interface MapViewController : UIViewController
 
+@property (nonatomic) CGFloat lat;
+@property (nonatomic) CGFloat lon;
+@property (nonatomic, strong) NSString* markerTitle;
+@property (nonatomic, strong) NSString* markerSnippet;
+
+
 @end

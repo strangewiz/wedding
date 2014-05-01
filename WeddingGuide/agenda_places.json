@@ -1,8 +1,14 @@
 [
   {
     "title": "Top of the town",
+    "lat": 38.89005,
+    "lon": -77.07302,
+    "snippet": "1400 14th St N, Arlington, VA 22209."
   },
   {
     "title": "Virginian Suties",
-  },  
+    "lat": 38.89104,
+    "lon": -77.07425,
+    "snippet": "1500 Arlington Blvd, Arlington, VA 22209"
+  },
 ]

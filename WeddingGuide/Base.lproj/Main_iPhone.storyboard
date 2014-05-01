@@ -154,15 +154,15 @@
             </objects>
             <point key="canvasLocation" x="395" y="241"/>
         </scene>
-        <!--View Controller - AgendaDetail-->
+        <!--Agenda Detail View Controller - AgendaDetail-->
         <scene sceneID="CA2-8s-LeM">
             <objects>
-                <viewController title="AgendaDetail" id="Txl-03-MaM" sceneMemberID="viewController">
+                <viewController title="AgendaDetail" id="Txl-03-MaM" customClass="AgendaDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uPF-Nj-PCW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CcH-eL-3Dd">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" id="CcH-eL-3Dd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,10 +173,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mTR-SI-ElU"/>
+                    <connections>
+                        <outlet property="textView" destination="CcH-eL-3Dd" id="MTz-lc-SfL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hng-CQ-1sQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="-636"/>
+            <point key="canvasLocation" x="971" y="-776"/>
         </scene>
         <!--Map View Controller - MapView-->
         <scene sceneID="dtj-gG-wnL">

@@ -8,6 +8,11 @@
 
 #import "AgendaViewController.h"
 
+#import "AgendaDetailViewController.h"
+#import "MapViewController.h"
+#import <GoogleMaps/GoogleMaps.h>
+
+
 @interface AgendaViewController () {
   NSArray* agendaData_;
   NSArray* placesData_;
@@ -16,6 +21,8 @@
   IBOutlet UITableView* table_;
   IBOutlet NSString* agendaDetail_;
   BOOL showBridalParty_;
+  BOOL showAllLocations_;
+  GMSMapView* mapView_;
 }
 @end
 
@@ -29,6 +36,7 @@
   agendaData_ = [NSJSONSerialization JSONObjectWithData:data
                                                 options:kNilOptions
                                                   error:&error];
+  showAllLocations_ = NO;
 
   filePath =
       [[NSBundle mainBundle] pathForResource:@"agenda_places" ofType:@"json"];
@@ -73,6 +81,9 @@
     self.navigationItem.rightBarButtonItem = rightButton_;
   } else {
     self.navigationItem.rightBarButtonItem = nil;
+    if (showAllLocations_) {
+      [self toggleTableMap];
+    }
   }
   NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
   showBridalParty_ = [defaults boolForKey:@"bridal_party"];
@@ -80,6 +91,41 @@
 }
 
 - (void)toggleTableMap {
+  if (!mapView_) {
+    // Create a GMSCameraPosition that tells the map to display the
+    // coordinate -33.86,151.20 at zoom level 6.
+    GMSCameraPosition* camera = [GMSCameraPosition cameraWithLatitude:38.89034
+                                                            longitude:-77.07379
+                                                                 zoom:17];
+    mapView_ = [GMSMapView mapWithFrame:self.view.bounds camera:camera];
+    mapView_.settings.compassButton = YES;
+    mapView_.myLocationEnabled = YES;
+    mapView_.hidden = YES;
+    [self.view addSubview:mapView_];
+
+    for (NSDictionary* dict in placesData_) {
+      if (!showBridalParty_ && dict[@"bridal_party"] != nil)
+        continue;
+      GMSMarker* marker = [[GMSMarker alloc] init];
+      marker.position = CLLocationCoordinate2DMake([dict[@"lat"] floatValue],
+                                                   [dict[@"lon"] floatValue]);
+      marker.title = dict[@"title"];
+      marker.snippet = dict[@"snippet"];
+      marker.map = mapView_;
+    }
+  }
+
+  [UIView transitionWithView:self.view
+      duration:1
+      options:UIViewAnimationOptionTransitionFlipFromRight |
+              UIViewAnimationOptionAllowAnimatedContent
+      animations:^() {
+          table_.hidden = !showAllLocations_;
+          mapView_.hidden = showAllLocations_;
+      }
+      completion:^(BOOL finished) {
+          showAllLocations_ = !showAllLocations_;
+      }];
 }
 
 #pragma mark - Navigation
@@ -89,6 +135,21 @@
 - (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender {
   // Get the new view controller using [segue destinationViewController].
   // Pass the selected object to the new view controller.
+  UITableViewCell* cell = (UITableViewCell*)sender;
+  NSDictionary* agenda = [self itemForRow:[table_ indexPathForCell:cell].row];
+  if ([segue.destinationViewController
+          isKindOfClass:[MapViewController class]]) {
+    MapViewController* controller = (MapViewController*)segue.destinationViewController;
+    controller.lat = [agenda[@"lat"] floatValue];
+    controller.lon = [agenda[@"lon"] floatValue];
+    controller.title = agenda[@"title"];
+    controller.markerTitle = agenda[@"title"];
+    controller.markerSnippet = agenda[@"snippet"];
+  } else if ([segue.destinationViewController
+                 isKindOfClass:[AgendaDetailViewController class]]) {
+    AgendaDetailViewController* controller = (AgendaDetailViewController*)segue.destinationViewController;
+    controller.text = agenda[@"details"];
+  }
 }
 
 #pragma mark - Table view data source
@@ -129,10 +190,18 @@
   return nil;
 }
 
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+  if([sender isKindOfClass:[UITableViewCell class]]) {
+    UITableViewCell* cell = (UITableViewCell*)sender;
+    if (cell.accessoryType == UITableViewCellAccessoryDisclosureIndicator) {
+      return YES;
+    }
+  }
+  return NO;
+}
+
 - (UITableViewCell*)tableView:(UITableView*)tableView
     agendaCellForRowAtIndexPath:(NSIndexPath*)indexPath {
-//  [tableView registerClass:[UITableViewCell class]
-//      forCellReuseIdentifier:@"agendacell"];
   UITableViewCell* cell =
       [tableView dequeueReusableCellWithIdentifier:@"agendacell"
                                       forIndexPath:indexPath];
