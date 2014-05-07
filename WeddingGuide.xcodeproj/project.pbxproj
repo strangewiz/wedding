@@ -22,6 +22,7 @@
 		935DCE1318FF7F18006E60EC /* DCStuffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935DCE1218FF7F18006E60EC /* DCStuffViewController.m */; };
 		9370F0191911C319003E387F /* AgendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370F0181911C319003E387F /* AgendaDetailViewController.m */; };
 		9370F01B1911DCF2003E387F /* dceats.json in Resources */ = {isa = PBXBuildFile; fileRef = 9370F01A1911DCF2003E387F /* dceats.json */; };
+		938A3E2B191AE0E0002AF54F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938A3E2A191AE0E0002AF54F /* Crashlytics.framework */; };
 		93BCAF7D18FF74D500C811D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BCAF7C18FF74D500C811D9 /* Foundation.framework */; };
 		93BCAF7F18FF74D500C811D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BCAF7E18FF74D500C811D9 /* CoreGraphics.framework */; };
 		93BCAF8118FF74D500C811D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BCAF8018FF74D500C811D9 /* UIKit.framework */; };
@@ -84,6 +85,7 @@
 		9370F0171911C319003E387F /* AgendaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaDetailViewController.h; sourceTree = "<group>"; };
 		9370F0181911C319003E387F /* AgendaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaDetailViewController.m; sourceTree = "<group>"; };
 		9370F01A1911DCF2003E387F /* dceats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dceats.json; sourceTree = "<group>"; };
+		938A3E2A191AE0E0002AF54F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		93BCAF7918FF74D500C811D9 /* WeddingGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BCAF7C18FF74D500C811D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93BCAF7E18FF74D500C811D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,6 +139,7 @@
 				93E09C68190017F300D56266 /* libc++.dylib in Frameworks */,
 				93E09C66190017ED00D56266 /* ImageIO.framework in Frameworks */,
 				93E09C64190017E900D56266 /* GLKit.framework in Frameworks */,
+				938A3E2B191AE0E0002AF54F /* Crashlytics.framework in Frameworks */,
 				93E09C62190017E500D56266 /* CoreText.framework in Frameworks */,
 				93E09C60190017E000D56266 /* CoreLocation.framework in Frameworks */,
 				93E09C5E190017DA00D56266 /* CoreData.framework in Frameworks */,
@@ -197,6 +200,7 @@
 		93BCAF7B18FF74D500C811D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				938A3E2A191AE0E0002AF54F /* Crashlytics.framework */,
 				93E09C711900180D00D56266 /* SystemConfiguration.framework */,
 				93E09C6F1900180700D56266 /* QuartzCore.framework */,
 				93E09C6D1900180300D56266 /* OpenGLES.framework */,
@@ -289,6 +293,7 @@
 				93BCAF7518FF74D500C811D9 /* Sources */,
 				93BCAF7618FF74D500C811D9 /* Frameworks */,
 				93BCAF7718FF74D500C811D9 /* Resources */,
+				938A3E29191AE0AC002AF54F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -384,6 +389,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		938A3E29191AE0AC002AF54F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run d355de85f8bbd162b98536bf3c020b8b87c7947e 0ef78a9e51be1bde9081fc0ad30d14c6230418f0349fef9d840442fc6865f799";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93BCAF7518FF74D500C811D9 /* Sources */ = {
