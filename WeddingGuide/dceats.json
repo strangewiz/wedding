@@ -1,14 +1,63 @@
 [
  {
- "title" : "lauriol plaza",
- "lat": 38.89005,
- "lon": -77.07302,
- "snippet": "1400 14th St N, Arlington, VA 22209."
+ "title" : "Lauriol Plaza",
+ "lat": 38.91531,
+ "lon": -77.04136,
+ "snippet": "1835 18th St NW, Washington, DC 20009"
  },
  {
- "title" : "ben's chili bowl",
- "lat": 38.89005,
- "lon": -77.07302,
- "snippet": "1400 14th St N, Arlington, VA 22209."
+ "title" : "Ben's Chili Bowl",
+ "lat": 38.91732,
+ "lon": -77.02877,
+ "snippet": "1213 U St NW, Washington, DC"
+ },
+ {
+ "title" : "Blue Duck Tavern",
+ "lat": 38.90588,
+ "lon": -77.05103,
+ "snippet": "1201 24th St., NW, Washington, DC 20037"
+ },
+ {
+ "title" : "The Red Hen",
+ "lat": 38.91496,
+ "lon": -77.01233,
+ "snippet": "1822 First St., NW, Washington, DC"
+ },
+ {
+ "title" : "Rose’s Luxury",
+ "lat": 38.88064,
+ "lon": -77.99534,
+ "snippet": "717 Eighth St., SE, Washington, Dc"
+ },
+ {
+ "title" : "Rasika",
+ "lat": 38.90496,
+ "lon": -77.04817,
+ "snippet": "1190 New Hampshire Ave NW, Washington, DC 20037"
+ },
+ {
+ "title" : "DGS Delicatessen",
+ "lat": 38.90774,
+ "lon": -77.04219,
+ "snippet": "1317 Connecticut Ave., NW, Washington, DC 20036"
+ },
+ {
+ "title" : "Liberty Tavern",
+ "lat": 38.88637,
+ "lon": -77.09688,
+ "snippet": "3195 Wilson Boulevard, Arlington, VA 22201"
+ },
+ {
+ "title" : "Ray's The Steaks",
+ "lat": 38.89073,
+ "lon": -77.08768,
+ "snippet": "2300 N. Wilson Blvd., Arlington, VA"
+ },
+ {
+ "title" : "2 Amys",
+ "lat": 38.93362,
+ "lon": -77.07309,
+ "snippet": "3715 Macomb St., NW, Washington, DC 20016"
  }
 ]
+

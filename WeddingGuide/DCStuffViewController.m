@@ -90,7 +90,7 @@
 
   }
   [mapView_ clear];
-  NSArray* data = segment_.selectedSegmentIndex == 0 ? dcstuff_ : dceats_;
+  NSArray* data = [self getData];
   for (NSDictionary* dict in data) {
     GMSMarker* marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake([dict[@"lat"] floatValue],
@@ -127,9 +127,12 @@
   }
 }
 
+- (NSArray*)getData {
+  return segment_.selectedSegmentIndex == 0 ? dceats_ : dcstuff_;
+}
 
 - (NSDictionary*)itemForRow:(NSInteger)row {
-  NSArray* data = segment_.selectedSegmentIndex == 0 ? dcstuff_ : dceats_;
+  NSArray* data = [self getData];
   return data[row];
 }
 
@@ -141,7 +144,8 @@
 
 - (NSInteger)tableView:(UITableView*)tableView
  numberOfRowsInSection:(NSInteger)section {
-  return 2;
+  NSArray* data = [self getData];
+  return [data count];
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView

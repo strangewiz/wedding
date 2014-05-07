@@ -25,7 +25,11 @@
 
 - (void)showTabs {
   [self performSegueWithIdentifier:@"ToTabBar" sender:self];
-
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender {
+  [segue.destinationViewController setSelectedIndex:1];
+}
+
 
 @end
