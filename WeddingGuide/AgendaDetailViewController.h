@@ -10,6 +10,6 @@
 
 @interface AgendaDetailViewController : UIViewController
 
-@property (nonatomic, strong) NSString* text;
+@property(nonatomic, strong) NSString* text;
 
 @end

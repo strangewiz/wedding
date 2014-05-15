@@ -1,20 +1,26 @@
 [
   {
-    "title": "Top of the town",
+    "title": "Top of the Town (aka TOTT)",
     "lat": 38.89005,
     "lon": -77.07302,
-    "snippet": "1400 14th St N, Arlington, VA 22209."
+    "snippet": "1400 14th St N, Arlington, VA 22209\nIf you watch House of Cards, make sure to look out the window. Otherwise... you should also look out the window (and watch House of Cards)"
   },
   {
-    "title": "Virginian Suties",
+    "title": "Virginian Suites",
     "lat": 38.89104,
     "lon": -77.07425,
-    "snippet": "1500 Arlington Blvd, Arlington, VA 22209"
+    "snippet": "1500 Arlington Blvd, Arlington, VA 22209\nClose to the venue. Take the back door of the hotel (by the pool entrance), go up the steps and you are basically across the street from TOTT."
   },
   {
     "title": "Courtland Towers",
     "lat": 38.88774,
     "lon": -77.08539,
-    "snippet": "1200 N Veitch St, Arlington, VA 22201"
+    "snippet": "1200 N Veitch St, Arlington, VA 22201\nThe home of R&J.  Also, Coffee and Cakes.  Take the escalators to the first floor, go past the lobby for the common room."
+  },
+  {
+    "title": "Ragtime",
+    "lat": 38.88947,
+    "lon": -77.08354,
+    "snippet": "1200 N Veitch St, Arlington, VA 22201\nThe best bar in the world.  Also, very close to where J&R live =]"
   },
 ]

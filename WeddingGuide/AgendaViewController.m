@@ -204,6 +204,8 @@
   cell.textLabel.text = agenda[@"title"];
   if (agenda[@"details"] != nil) {
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+  } else {
+    cell.accessoryType = UITableViewCellAccessoryNone;
   }
   return cell;
 }

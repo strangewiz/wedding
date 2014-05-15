@@ -9,13 +9,14 @@
 #import "AgendaDetailViewController.h"
 
 @interface AgendaDetailViewController ()
-@property (nonatomic, strong) IBOutlet UITextView* textView;
+@property(nonatomic, strong) IBOutlet UITextView* textView;
 @end
 
 @implementation AgendaDetailViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.textView.text =self.text;
+  self.textView.text = self.text;
+  self.textView.font = [UIFont fontWithName:@"American Typewriter" size:17];
 }
 @end

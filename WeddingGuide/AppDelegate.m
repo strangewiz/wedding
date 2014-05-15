@@ -15,7 +15,7 @@
 - (BOOL)application:(UIApplication*)application
     didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
   [Crashlytics startWithAPIKey:@"d355de85f8bbd162b98536bf3c020b8b87c7947e"];
-  [GMSServices provideAPIKey:@"AIzaSyAEgwLeEl4zRW5M2u-5AZXkx8HMRjdEygI"];
+  [GMSServices provideAPIKey:@"AIzaSyBMps-gVqQntfE88Tc9mopYAHd3bdvYLPg"];
   return YES;
 }
 

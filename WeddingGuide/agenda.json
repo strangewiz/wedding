@@ -1,47 +1,74 @@
 [
   {
-    "title": "9:30AM Women do hair",
+    "title": "Saturday",
+  },
+  {
+    "title": "5:00 PM Rehearsal dinner",
     "bridal_party": 1,
-    "details": "details on where to go",
+    "details": "@ Lauriol Plaza. R&J's favorite big box mexican food. Come for the swirl margharita, stay for the guac.\n1835 18th St NW, Washington, DC 20009",
     
   },
   {
-    "title": "1:00PM Photos on the mall",
+    "title": "8:00 PM Actual Rehearsal",
     "bridal_party": 1,
-    "details": "details on where to go, and who needs to be there.",
+    "details": "Come to the Courtland Towers common room for a quick run through of the event.\n\nOn the weekends street parking is usually easy to find, but if not you can park for free in the metro lot a block north of Courtland Towers.  Come up the escalators, walk past the lobby, and you'll see the common room on your right.\n1200 N Veitch St, Arlington, VA 22201",
     
   },
   {
-    "title": "3:30PM Ceremony Time!",
-    "details": "prelude, processional, etc, put text here",
+    "title": "8:30 PM Coffee & Cake",
+    "details": "Also wine! Come hang out the and spend the last night with R&J as Mr and Miss. There'll be some dessert, coffee and good company.\n\n On the weekends street parking is usually easy to find, but if not you can park for free in the metro lot a block north of Courtland Towers.  Come up the escalators, walk past the lobby, and you'll see the common room on your right.\n\n1200 N Veitch St, Arlington, VA 22201",
+  },
+  {
+    "title": "Sunday",
+  },
+  {
+    "title": "8:00 AM Hair & Makeup Begins",
+    "bridal_party": 1,
+    "details": "Hair will be done in our hotel rooms at the The Virginian Suites, 1500 Arlington Blvd.  Call Rachel or Justin if you aren't sure where to meet!",
     
   },
   {
-    "title": "4:00PM Ceremony Ends!",
+    "title": "2:30 PM To Iwo Jima for photos",
+    "bridal_party": 1,
+    "details": "This is weather dependent. Check with Justin on details for exactly where to meet.",
+  },
+  {
+    "title": "3:00 PM Photos at Iwo Jima",
+    "bridal_party": 1,
+    "details": "It's going to be gorgeous, I swear!",
     
   },
   {
-    "title": "4:00PM Cocktail Hour",
-    "details": "grab some drinks and enjoy the view.",
-    
+    "title": "4:00 PM Back to hotel 4 Ketubah",
+    "bridal_party": 1,
   },
   {
-    "title": "5:00PM Time for dinner",
-    "details": "maybe list the menu for those who forget.",
-    
+    "title": "4:30 PM Ketubah signing",
+    "bridal_party": 1,
+    "details": "Ketubah signing at the Virginian Suites.  Check with Justin or Rachel on the location, it will likely be in Rachel's hotel room.",
   },
   {
-    "title": "6:00PM Dancing",
-    "details": "something funny about throwing me in a chair.",
-    
+    "title": "5:30 PM Ceremony room is open",
+    "details": "Head to the Top of the Town and take the elevator to the top floor. The adddress is:\n1400 14th St N,\nArlington, VA 22209",
   },
   {
-    "title": "7:00PM Cake cutting",
-    
+    "title": "6:00 PM Processional begins",
+    "details": "Don't be late!",
   },
   {
-    "title": "10:30PM Last song",
-
+    "title": "6:30PM Cocktail hour",
+    "details": "DRINK!  EAT!  BE MERRY!",
+  },
+  {
+    "title": "8:00 PM Dinner is served",
+    "details": "EAT!  CONTINUE TO DRINK!\n\nAlso, the menu:\n\nPassed Hors d'oeuvres\n- Toastada + Mole Chicken\n- Chicken n' Waffles\n- Rasberries + Brie\n\nPlated First Course\n- River Farm Flower Salad\n\nPlated Dinner Entrée\n- Boneless Beef Short Rib.\n- Pecan Encrusted Salmon\n- Rosemary Roasted Fingerlings\n- Crisp and tender green beans\n\nDesert\n- Lots.",
+  },
+  {
+    "title": "9:30 PM Cake cutting",
+  },
+  {
+    "title": "10:45PM Afterparty!",
+    "details": "Perhaps some more drinking.  I just can't predict the future.  Probably @ Ragtime.  Check with R&J.",
   },
   
 ]

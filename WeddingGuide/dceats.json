@@ -3,61 +3,67 @@
  "title" : "Lauriol Plaza",
  "lat": 38.91531,
  "lon": -77.04136,
- "snippet": "1835 18th St NW, Washington, DC 20009"
+ "snippet": "1835 18th St NW, Washington, DC 20009\nR&J's favorite big box mexican food. Come for the swirl margharita, stay for the guac."
  },
  {
  "title" : "Ben's Chili Bowl",
  "lat": 38.91732,
  "lon": -77.02877,
- "snippet": "1213 U St NW, Washington, DC"
+ "snippet": "1213 U St NW, Washington, DC\nClassic DC fair, get the half smoke. Stay for the people watching."
  },
  {
  "title" : "Blue Duck Tavern",
  "lat": 38.90588,
  "lon": -77.05103,
- "snippet": "1201 24th St., NW, Washington, DC 20037"
+ "snippet": "1201 24th St., NW, Washington, DC 20037\nWe've never actually been but everyone keeps talking about it.  You should go and tell us how it is =D"
  },
  {
  "title" : "The Red Hen",
  "lat": 38.91496,
  "lon": -77.01233,
- "snippet": "1822 First St., NW, Washington, DC"
+ "snippet": "1822 First St., NW, Washington, DC\nWe've never actually been but everyone keeps talking about it.  You should go and tell us how it is =D"
  },
  {
  "title" : "Rose’s Luxury",
  "lat": 38.88064,
  "lon": -77.99534,
- "snippet": "717 Eighth St., SE, Washington, Dc"
+ "snippet": "717 Eighth St., SE, Washington, DC\nWe've never actually been but everyone keeps talking about it.  You should go and tell us how it is =D"
  },
  {
  "title" : "Rasika",
  "lat": 38.90496,
  "lon": -77.04817,
- "snippet": "1190 New Hampshire Ave NW, Washington, DC 20037"
+ "snippet": "1190 New Hampshire Ave NW, Washington, DC 20037\nAmazing Indian food."
  },
  {
  "title" : "DGS Delicatessen",
  "lat": 38.90774,
  "lon": -77.04219,
- "snippet": "1317 Connecticut Ave., NW, Washington, DC 20036"
+ "snippet": "1317 Connecticut Ave., NW, Washington, DC 20036\nFusion of both traditional & modern Jewish cooking."
  },
  {
  "title" : "Liberty Tavern",
  "lat": 38.88637,
  "lon": -77.09688,
- "snippet": "3195 Wilson Boulevard, Arlington, VA 22201"
+ "snippet": "3195 Wilson Boulevard, Arlington, VA 22201\nWe go here for brunch all the time. Good drinks and food."
  },
  {
  "title" : "Ray's The Steaks",
  "lat": 38.89073,
  "lon": -77.08768,
- "snippet": "2300 N. Wilson Blvd., Arlington, VA"
+ "snippet": "2300 N. Wilson Blvd., Arlington, VA\nNo frills steak. Cheap and delicious."
  },
  {
  "title" : "2 Amys",
  "lat": 38.93362,
  "lon": -77.07309,
- "snippet": "3715 Macomb St., NW, Washington, DC 20016"
- }
+ "snippet": "3715 Macomb St., NW, Washington, DC 20016\nExcellent wood fired pizza."
+ },
+ {
+ "title": "Ragtime",
+ "lat": 38.88947,
+ "lon": -77.08354,
+ "snippet": "1200 N Veitch St, Arlington, VA 22201\nThe best bar in the world. Also, very close to where R&J live =]"
+ },
 ]
 

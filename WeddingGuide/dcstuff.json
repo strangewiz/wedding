@@ -3,36 +3,42 @@
  "title" : "Visit the National Zoo",
  "lat": 38.93088,
  "lon": -77.05164,
- "snippet": "3001 Connecticut Ave NW, Washington, DC 20008"
+ "snippet": "3001 Connecticut Ave NW, Washington, DC 20008\nThe orangutans aren't fenced in and they can climb around the park.  Also, pandas are the hot item."
  },
  {
  "title" : "Tour the National Mall",
  "lat": 38.89053,
  "lon": -77.02293,
- "snippet": "800 Madison Dr NW, Washington, DC 20408"
+ "snippet": "800 Madison Dr NW, Washington, DC 20408\nEverything is free.  Actually, you are all paying for it.. but we can discuss that later."
  },
  {
  "title" : "Visit the Capital building",
  "lat": 38.88871,
  "lon": -77.00593,
- "snippet": " First St SE, Washington, DC 20004"
+ "snippet": " First St SE, Washington, DC 20004\nIf you plan early enough you can get a tour, but the grounds are pretty cool to walk around."
  },
  {
  "title" : "Walk through Gerogetown",
  "lat": 38.90517,
  "lon": -77.06281,
- "snippet": "Wisconsin Ave NW & M St NW Washington, DC 20007"
+ "snippet": "Wisconsin Ave NW & M St NW Washington, DC 20007\nJust make sure you pop your collar first."
  },
  {
  "title" : "Kennedy Center",
  "lat": 38.89605,
  "lon": -77.05485,
- "snippet": "2700 F St NW, Washington, DC 20566"
+ "snippet": "2700 F St NW, Washington, DC 20566\nCatch a show, there's free stuff at the Millenium stage every day."
  },
  {
  "title" : "Hike Great Falls Park",
  "lat": 38.98185,
  "lon": -77.25687,
- "snippet": "9200 Old Dominion Dr, McLean, VA 22102"
- }
+ "snippet": "9200 Old Dominion Dr, McLean, VA 22102\nOne of those things tourists don't get a chance to do when they visit, but there's lots of good hiking in the DC area. Check it out!"
+ },
+ {
+ "title" : "Newseum",
+ "lat": 38.89691,
+ "lon": -77.02343,
+ "snippet": "555 Pennsylvania Ave NW, Washington, DC 20001\nIt's not cheap, but it's one of the best museums in DC.  Look around online for discounts ala groupon."
+  },
 ]
