@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+
   // Create a GMSCameraPosition that tells the map to display the
   // coordinate -33.86,151.20 at zoom level 6.
   GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:self.lat
@@ -35,6 +36,30 @@
   marker.title = self.markerTitle;
   marker.snippet = self.markerSnippet;
   marker.map = mapView_;
+
+  self.navigationItem.rightBarButtonItem =
+      [[UIBarButtonItem alloc] initWithTitle:@"Directions"
+                                       style:UIBarButtonItemStyleBordered
+                                      target:self
+                                      action:@selector(getDirections)];
+}
+
+- (void)getDirections {
+  BOOL canHandle = [[UIApplication sharedApplication]
+      canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]];
+  if (canHandle) {
+    NSString* url =
+        [NSString stringWithFormat:@"comgooglemaps://?daddr=%f,%f&zoom=12",
+                                   self.lat,
+                                   self.lon];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+  } else {
+    NSString* url =
+        [NSString stringWithFormat:@"http://maps.apple.com?daddr=%f,%f",
+                                   self.lat,
+                                   self.lon];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+  }
 }
 
 @end
